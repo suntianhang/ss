@@ -40,20 +40,24 @@ $(function() {
 		tab();
 		tab1();
 	})
-	$('.prev').hover(function(){
+	$('.prev').hover(function() {
 		$('.prev').append('<p style="width:100%;height:100%;background:#000;opacity:0.5;border-radius:5px 0 0 5px;"></p>')
-	},function(){
+	}, function() {
 		$('.prev').children().remove()
 	})
-	$('.next').hover(function(){
+	$('.next').hover(function() {
 		$('.next').append('<p style="width:100%;height:100%;background:#000;opacity:0.5;border-radius:0 5px 5px 0;"></p>')
-	},function(){
+	}, function() {
 		$('.next').children().remove()
 	})
-	
-	$('.menu1_link').hover(function(){
-		$(this).siblings().css({'display':'block'})
-	},function(){
-		$('.menu-bd1').css({'display':'none'})
+
+	$('.menu1_link').hover(function() {
+		$(this).siblings().css({
+			'display': 'block'
+		})
+	}, function() {
+		$('.menu-bd1').css({
+			'display': 'none'
+		})
 	})
 })
